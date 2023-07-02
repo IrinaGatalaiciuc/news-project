@@ -1,0 +1,40 @@
+.header {
+    display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+background-color: rgb(66, 66, 133);
+height: 50px;
+overflow-y: auto;
+width: 98vw;
+}
+
+ .header-logo a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 26px;
+ }
+
+
+
+.header-part a {
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+    font-weight: 20px;
+    margin: 35px; 
+}
+
+.header-part .active {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}

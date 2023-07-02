@@ -1,0 +1,140 @@
+.contact {
+    background-color: rgb(255, 228, 196, 0.4);
+    height: 90vh;
+      display: flex;
+    flex-direction: row;
+     padding: 90px;
+     width: 98vw;
+     
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    width: 45%;
+    gap: 20px;
+    background-color: rgb(0, 0, 255, 0.4);
+    height: 450px; 
+    
+}
+
+input {
+    border-radius: 5px;
+    height: 25px;
+    width: 55%;
+    border-style: none;
+}
+
+div img {
+    height: 450px;
+    width: 450px;
+    object-fit: cover;
+    position: relative;
+}
+
+div .shadow {
+    background-color: rgb(0, 0, 0, 0.3);
+    margin-top: -454px;
+    height: 450px;
+    width: 450px;
+    position: absolute;
+}
+
+.btn-send {
+    width: 35%;
+    margin-top: 15px;
+    height: 30px;
+}
+
+form p {
+    color: red;
+    margin-bottom: -15px;
+    margin-top: -14px;
+}
+
+textarea {
+    min-width: 55%;
+    min-height: 100px;
+} 
+
+@media screen and (max-width: 1000px) {
+    div img {
+        height: 450px;
+        width: 370px;
+        object-fit: cover;
+        position: relative;
+    }
+    
+    div .shadow {
+        
+        margin-top: -454px;
+        height: 450px;
+        width: 370px;
+        position: absolute;
+    }
+    
+    form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    div img {
+        height: 400px;
+        width: 320px;
+        object-fit: cover;
+        position: relative;
+    }
+    
+    div .shadow {
+        
+        margin-top: -404px;
+        height: 400px;
+        width: 320px;
+        position: absolute;
+    }
+    
+    form {
+        width: 55%;
+        height: 400px;
+    }
+} 
+
+
+@media screen and (max-width: 900px) {
+    div img {
+       display: none
+    }
+    
+    div .shadow {
+       display: none;
+    }
+    
+    form {
+        width: 400px;
+        height: 400px;
+    }
+} 
+
+@media screen and (max-width: 500px) {
+    div img {
+       display: none
+    }
+    
+    div .shadow {
+       display: none;
+    }
+    
+    form {
+        width: 300px;
+        height: 400px;
+    }
+
+    input {
+        width: 60%;
+    }
+} 
