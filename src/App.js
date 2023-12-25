@@ -6,19 +6,22 @@ import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import Singlenews from "./pages/Singlenews";
 import Footer from "./footer/Footer";
+import Api from "./api/Api";
 
 function App() {
   return (
     <BrowserRouter>
-    <Navigation />
-    <Routes>
-      <Route path="/" element={<Home />}/>
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/about" element={<About />} />
-      <Route path="*" element={<Page404 />} />
-      <Route path="/details/:title" element={<Singlenews />} />
-    </Routes>
-    <Footer />
+      <Navigation />
+      <Api>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/details/:title" element={<Singlenews />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<Page404 />} />
+        </Routes>
+      </Api>
+      <Footer />
     </BrowserRouter>
   );
 }

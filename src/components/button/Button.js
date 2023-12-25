@@ -7,9 +7,13 @@ import styled from 'styled-components'
  color: black;
  font-size: 20px;
  cursor: pointer;
- }
+ padding: 0 15px;
 `
 
-export const RedButton = styled(ButtonComponent)`
-background-color: red;
+export const BlueButton = styled(ButtonComponent)`
+background-color: #22303E;
+color: white;
+padding: 10px 15px;
+text-align: center;
+height: 55px;
 `

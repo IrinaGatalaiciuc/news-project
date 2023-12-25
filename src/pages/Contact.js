@@ -1,6 +1,6 @@
 import React from 'react'
 import { useForm } from "react-hook-form";
-import { RedButton } from '../components/button/Button';
+import { BlueButton } from '../components/button/Button';
 import regimg from "../pages/images/newspaper.jpg"
 import "../styles/Contact.css" 
 
@@ -26,8 +26,7 @@ function Contact() {
         <input type="password" placeholder="Password" {...register("password", { required: true })}></input>
         {errors.password && <p>Add password</p>}
         <textarea placeholder="Write your message" {...register("message")}></textarea>
-        {/* <button className="btn-send" type="submit">Send message</button> */}
-        <RedButton type="submit">Send message</RedButton>
+        <BlueButton type="submit">Send message</BlueButton>
       </form>
 
     </div>

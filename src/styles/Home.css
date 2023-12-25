@@ -26,5 +26,7 @@ height: 200px;
     .btn-section {
         display: flex;
         flex-direction: column;
+       align-items: flex-start;
+       margin: 10px 50px;
     }
 } 
